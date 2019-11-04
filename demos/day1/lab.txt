@@ -1,0 +1,5 @@
+1. Add a new component called
+   DaysOfTheWeek
+   which shows a list of all the days
+   in the week (Sunday, Monday, ...)
+
