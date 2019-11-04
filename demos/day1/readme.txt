@@ -22,3 +22,23 @@ Installation:
 5. Write some React
 
 6. Build with: npx webpack
+
+7. Install dev server: yarn add webpack-dev-server
+
+8. Run dev server: npx webpack-dev-server -d
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

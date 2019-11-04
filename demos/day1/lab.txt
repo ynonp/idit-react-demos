@@ -3,3 +3,18 @@
    which shows a list of all the days
    in the week (Sunday, Monday, ...)
 
+2. In the Counter component, add code to paint
+   the counter red when reaching 10
+
+3. Create a new React component that shows 5
+   input text fields (<input type="text" />)
+   every time you change the input in one field,
+   it should AUTOMATICALLY change in all the others
+   to match
+
+4. In the Counter component, get a "delta" value
+   from outside and increase by "delta". If
+   delta was not provided use 1
+
+5 (*). In the Days Of The Week component, add a
+       <input type="text" /> to filter the list
