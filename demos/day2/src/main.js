@@ -8,24 +8,18 @@ import DaysOfTheWeek from './days_of_the_week';
 import Counter from './counter';
 import TextFields from './textfields';
 import { useState } from 'react';
+import DeltaSelector from './delta_selector';
 
 const App = () => {
   const n = Math.random();
-  const [delta, setDelta] = useState(4);
-
-  function handleSetDelta(e) {
-    setDelta(Number(e.target.value));
-  }
+  const [delta, setDelta] = useState(1);
 
   return (
     <div>
-      <h1>Hello World - {n} - { 1 + 1 }</h1>
-       <Person name="one"   display={n > 0.5} />
-       <input type="number" value={delta} onChange={handleSetDelta} />
-       <Counter delta={delta} />
-       <TextFields />
-       <TextFields />
-     </div>
+      <DaysOfTheWeek />
+      <DeltaSelector delta={delta} setDelta={setDelta} />
+      <Counter delta={delta} />
+    </div>
   )
 };
 

@@ -8,8 +8,14 @@ export default function Counter(props) {
   const cls   = (count >= 10 ? 'red' : 'normal');
   const delta = props.delta || 1;
 
-  function inc() {
-    setCount(count + delta);
+  function updateFunction(oldValue) {
+    return oldValue + 1;
+  }
+
+  function inc() {    
+    setCount(updateFunction);
+    setCount(updateFunction);
+    setCount(updateFunction);
   }
 
   return (
