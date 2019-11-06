@@ -25,12 +25,13 @@ export default function() {
   }
 
   function handleChange(e, day) {
-    if (e.target.checked) {
-      selectedDays.add(day);
+    const newSelectedDays = new Set([...selectedDays]);
+    if (e.target.checked) {      
+      newSelectedDays.add(day);
     } else {
-      selectedDays.delete(day);
+      newSelectedDays.delete(day);
     }
-    setSelectedDays(selectedDays);
+    setSelectedDays(newSelectedDays);
   }
 
   // npx webpack-dev-server -d
