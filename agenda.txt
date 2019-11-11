@@ -1,24 +1,29 @@
-Day 1
+Week 1
   - JavaScript Reminder: classes, import/export, arrow functions
   - lab 1 - JavaScript https://www.tocode.co.il/bundles/es6/lessons/classes-lab
   - Hello React
   - My First React Component
   - Component State
+  - Lists and Indexes
+  - Component Props
   - lab 2 - https://www.tocode.co.il/bundles/react/lessons/components-lab
 
-Day 2
-  - Component Props
+Week 2
+  - Lifecycle:
+    * useEffect
+    * useRef
+    * useCallback, React.memo
+    * useContext
+
+  - Ajax
   - Pattern: state -> props
   - lab 3 - https://www.tocode.co.il/bundles/react/lessons/multiplecomponents-lab
     * use multiple components "Score", "Game", "GameBox"
 
   - Classes vs. Hooks
-  - Lists and Indexes
-  - Lifecycle
   - lab 4 https://www.tocode.co.il/bundles/react/lessons/lifecycle-lab
 
-Day 3
-  - Ajax
+Week 3
   - lab 5 - https://www.tocode.co.il/bundles/react/lessons/ajax-lab
   - Code reuse with custom hooks
   - React & Performance

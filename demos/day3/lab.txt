@@ -1,0 +1,16 @@
+
+1. Create two select boxes - one for a character
+   (from https://swapi.co/api/people/{id}/
+
+   And the other for a film
+   (from https://swapi.co/api/films/{id}/)
+
+2. When a user selects a character show the 
+   character's name
+
+3. When a user selects a film show the film's title
+
+4. When a user selects a character, allow only
+   the film IDs this character appeared in
+
+
