@@ -1,0 +1,13 @@
+
+Labs:
+
+  1. Fix timer.js file
+
+  2. Create a game called "Red Spotter"
+    * show 9 grey squares, and 1 red square
+    * user should click on the red square
+    * click on red => +5 points
+    * click on grey => -8
+    * two seconds without a click => -2
+    * after two seconds shuffle the squares
+
