@@ -25,25 +25,33 @@ function Square(props) {
   );
 }
 
-let timer = null;
-
 export default function RedSpotter(props) {
   const [redIndex, setRedIndex] = useState(_.random(1, 10));
   const [score, setScore] = useState(0);
+  const [lastPlayTime, setLastPlayTime] = useState(Date.now());
 
-  function startNewTimer() {
-    clearTimeout(timer);
-    timer = setTimeout(timeout, 2000);
-  }
+  useEffect(
+    function() {
+      const timer = setTimeout(function() {
+        setScore(score => score - 2);
+        setLastPlayTime(Date.now());
+      }, 2000)
+
+      return function cancel() {
+        clearTimeout(timer);
+      }
+    }, [lastPlayTime])
+
   
   function win() {
     setScore(score => score + 8);
     setRedIndex(_.random(1, 10));
-    startNewTimer();
+    setLastPlayTime(Date.now());
   }
 
   function lose() {
     setScore(score => score - 5);
+    setLastPlayTime(Date.now());
   }
 
   function timeout() {

@@ -1,13 +1,32 @@
 
 Labs:
 
-  1. Fix timer.js file
+1. In this lab file:
+https://www.tocode.co.il/bundles/react/lessons/lifecycle-lab
 
-  2. Create a game called "Red Spotter"
-    * show 9 grey squares, and 1 red square
-    * user should click on the red square
-    * click on red => +5 points
-    * click on grey => -8
-    * two seconds without a click => -2
-    * after two seconds shuffle the squares
+Solve number 3
+
+---
+
+2. Write a multi page form using React
+
+  - Page 1: user details
+      name,
+      password,
+      country
+
+  - Page 2: hobbies
+      select from a list of hobbies
+
+  - Page 3: summary
+      show all the details
+
+  <MultiPageForm>
+    <RegistrationPage />
+    <HobbiesPage />
+    <SummaryPage />
+  </MultiPageForm>
+
+  ***> Read about: React.children
+
 
