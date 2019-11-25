@@ -7,10 +7,14 @@ import HobbiesPage from './hobbies_page';
 import store from './hello_redux';
 import Messages from './messages';
 import { Provider } from 'react-redux';
+import MessageCount from './message_count';
 
 const App = () => (
   <Provider store={window.globalStore}>
-    <Messages />
+    <div>
+      <MessageCount />
+      <Messages />
+    </div>
   </Provider>
 );
 
