@@ -1,0 +1,31 @@
+
+Labs:
+
+1. In this lab file:
+https://www.tocode.co.il/bundles/react/lessons/lifecycle-lab
+
+Solve number 3
+
+---
+
+2. Write a multi page form using React
+
+  - Page 1: user details
+      name,
+      password
+
+  - Page 2: hobbies
+      select from a list of hobbies
+
+  - Page 3: summary
+      show all the details
+
+  <MultiPageForm>
+    <RegistrationPage />
+    <HobbiesPage />
+    <SummaryPage />
+  </MultiPageForm>
+
+  ***> Read about: React.children
+
+
