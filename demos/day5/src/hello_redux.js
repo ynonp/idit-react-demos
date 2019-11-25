@@ -1,4 +1,5 @@
 import { createStore } from 'redux'
+import produce from "immer"
 
 /*
    1. Each user should be able to "post" a new message
@@ -37,6 +38,13 @@ function addMessage(state, { text, user }) {
     reduce((acc, val) => val > acc ? val : acc);
   const newId = maxId + 1;
 
+  return  produce(state, draft => {
+    draft.messages.push({
+      text, user, id: newId,
+    });
+  })
+
+  /*
   return {
     ...state,
     messages: [
@@ -44,6 +52,7 @@ function addMessage(state, { text, user }) {
       { id: newId, user, text },
     ],
   };
+  */
 }
 
 function deleteMessage(state, payload) {
@@ -51,4 +60,4 @@ function deleteMessage(state, payload) {
 }
 
 window.globalStore = createStore(reducer);
-
+export default window.globalStore

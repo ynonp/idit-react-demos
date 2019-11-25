@@ -10,7 +10,7 @@ import { Provider } from 'react-redux';
 import MessageCount from './message_count';
 
 const App = () => (
-  <Provider store={window.globalStore}>
+  <Provider store={store}>
     <div>
       <MessageCount />
       <Messages />
