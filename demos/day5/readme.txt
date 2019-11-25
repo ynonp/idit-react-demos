@@ -1,10 +1,28 @@
-React Hooks we want to talk about:
+Flux Libraries
 
-√. useReducer
+1. Redux
 
-√. useCallback, React.memo
+2. MobX
 
-√. useRef
+---------
 
-4. useContext
+1. Build a cute redux app for a feed of messages
+   Each user should be able to "post" a new message
+   Users can search messages by author
+   Users can see n recent messages
+
+2. Immutable Data Libraries
+
+3. Connect everything to React
+
+4. Redux Features for apps:
+   Ajax in redux
+   Multiple reducers
+
+
+
+
+
+
+
 

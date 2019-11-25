@@ -4,13 +4,14 @@ import MultiPageForm from './sol';
 import UserDetailsPage from './user_details_form';
 import SummaryPage from './summary';
 import HobbiesPage from './hobbies_page';
+import store from './hello_redux';
+import Messages from './messages';
+import { Provider } from 'react-redux';
 
 const App = () => (
-  <MultiPageForm foo="bar">
-    <SummaryPage />
-    <UserDetailsPage />
-    <HobbiesPage />
-  </MultiPageForm>
+  <Provider store={window.globalStore}>
+    <Messages />
+  </Provider>
 );
 
 const root = document.querySelector('main');
