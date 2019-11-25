@@ -1,9 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Sol from './sol';
+import MultiPageForm from './sol';
+import UserDetailsPage from './user_details_form';
+import SummaryPage from './summary';
+import HobbiesPage from './hobbies_page';
 
 const App = () => (
-  <Sol />
+  <MultiPageForm foo="bar">
+    <SummaryPage />
+    <UserDetailsPage />
+    <HobbiesPage />
+  </MultiPageForm>
 );
 
 const root = document.querySelector('main');
