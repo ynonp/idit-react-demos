@@ -6,6 +6,7 @@ import { Provider } from 'react-redux';
 import MessageCount from './message_count';
 import NewMessageBox from './new_message_box';
 import HocDemo from './higher_order_components';
+import Character from './starwars_character';
 
 const App = () => (
   <Provider store={store}>
@@ -13,6 +14,7 @@ const App = () => (
       <NewMessageBox />
       <MessageCount />
       <Messages />
+      <Character />
     </div>
   </Provider>
 );

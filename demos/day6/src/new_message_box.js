@@ -8,6 +8,10 @@ function NewMessageBox(props) {
   const [text, setText] = useState('');
   const { dispatch } = props;
 
+  function undo() {
+    dispatch({ type: 'undo' });
+  }
+
   function add() {
     dispatch(addMessage(username, text));
     setText('');
@@ -15,6 +19,7 @@ function NewMessageBox(props) {
 
   return (
     <div>
+      <button onClick={undo}>Undo</button>
       <div>        
         <label>
           User name

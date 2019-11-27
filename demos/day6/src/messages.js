@@ -1,13 +1,21 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { deleteMessage } from './actions';
 
 function Messages(props) {
-  const { messages } = props;
+  const { messages, dispatch } = props;
+
+  function deleteMe(id) {
+    dispatch(deleteMessage(id));
+  }
 
   return (
     <ul>
       {messages.map(msg => (
-        <li><b>{msg.user}</b> - {msg.text}</li>
+        <li key={msg.id}>
+          <b>{msg.user}</b> - {msg.text}
+            <button onClick={() => deleteMe(msg.id)}>Delete</button>
+        </li>
       ))}
     </ul>
   );

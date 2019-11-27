@@ -9,16 +9,14 @@ Week 1
   - lab 2 - https://www.tocode.co.il/bundles/react/lessons/components-lab
 
 Week 2
+  √ Ajax
   - Lifecycle:
-    * useEffect
-    * useRef
+    √ useEffect
     * useCallback, React.memo
-    * useContext
+    * useRef
 
-  - Ajax
-  - Pattern: state -> props
+  √ Pattern: state -> props
   - lab 3 - https://www.tocode.co.il/bundles/react/lessons/multiplecomponents-lab
-    * use multiple components "Score", "Game", "GameBox"
 
   - Classes vs. Hooks
   - lab 4 https://www.tocode.co.il/bundles/react/lessons/lifecycle-lab
