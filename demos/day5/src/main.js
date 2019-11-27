@@ -9,6 +9,15 @@ import Messages from './messages';
 import { Provider } from 'react-redux';
 import MessageCount from './message_count';
 
+const ChildrenDemo = () => (
+  <MultiPageForm>
+    <UserDetailsPage />
+    <SummaryPage />
+    <HobbiesPage />
+  </MultiPageForm>
+)
+
+
 const App = () => (
   <Provider store={store}>
     <div>
